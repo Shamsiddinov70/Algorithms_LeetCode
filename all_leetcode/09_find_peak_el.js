@@ -7,3 +7,17 @@ var findPeakElement = function (nums) {
         }
     }
 };
+
+/*
+let max = array[0];
+
+    for (let i = 1; i < array.length; i++) {
+        if (array[i] > max) {
+            max = array[i]
+        }
+    }
+
+ return max
+
+It is good way if array consists  thounds of items.
+ */
