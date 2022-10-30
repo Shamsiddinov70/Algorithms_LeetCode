@@ -5,8 +5,8 @@ var generateTheString = function (n) {
 
     let str = '';
     for (let i = 0; i < num; i++) {
-        str += "p";
+        str += "a";
     }
 
-    return str.length === (n - 1) ? (str + 'z') : (str + "az");
-};
+    return str.length === (n - 1) ? (str + 'b') : (str + "cd");
+}
