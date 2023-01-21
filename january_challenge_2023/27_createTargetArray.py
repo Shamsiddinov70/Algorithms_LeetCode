@@ -1,5 +1,5 @@
 class Solution:
-    def createTargetArray(self, nums: List[int], index: List[int]) -> List[int]:
+    def createTargetArray(nums, index):
         target = []
 
         for i in range(len(nums)):
