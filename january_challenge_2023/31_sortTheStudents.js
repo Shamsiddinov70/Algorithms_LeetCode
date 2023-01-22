@@ -1,6 +1,6 @@
 /**
  * @param {number[][]} score
- * @param {number} k
+ * @param {number}
  * @return {number[][]}
  */
 var sortTheStudents = function (score, k) {
