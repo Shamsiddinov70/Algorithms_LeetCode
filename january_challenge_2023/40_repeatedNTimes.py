@@ -1,7 +1,8 @@
 class Solution:
-    from collections import Counter
 
     def repeatedNTimes(nums):
+        from collections import Counter
+
         leng = len(nums) / 2
         dic = Counter(nums)
 
