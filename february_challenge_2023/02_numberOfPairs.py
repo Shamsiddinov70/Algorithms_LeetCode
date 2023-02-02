@@ -1,3 +1,6 @@
+from collections import Counter
+
+
 class Solution:
     def numberOfPairs(nums):
         dic = Counter(nums)

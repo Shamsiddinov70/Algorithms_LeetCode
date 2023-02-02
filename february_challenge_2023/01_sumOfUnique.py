@@ -1,3 +1,6 @@
+from collections import Counter
+
+
 class Solution:
     def sumOfUnique(nums):
         dic = Counter(nums)
