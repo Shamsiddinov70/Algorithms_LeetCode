@@ -2,7 +2,7 @@ from collections import Counter
 
 
 class Solution:
-    def getCommon(self, nums1: List[int], nums2: List[int]) -> int:
+    def getCommon(nums1, nums2) -> int:
         two_arr = [*set(nums1), *set(nums2)]
 
         dic = Counter(two_arr)
