@@ -16,8 +16,6 @@ public class Solution
         }
 
         int m1 = nums1.Min(), m2 = nums2.Min();
-        int minNum = m1 < m2 ? m1 * 10 + m2 : m2 * 10 + m1;
-
-        return min < 10 ? min : minNum;
+        return min < 10 ? min : m1 < m2 ? m1 * 10 + m2 : m2 * 10 + m1;
     }
 }
