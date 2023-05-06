@@ -1,4 +1,4 @@
-public class Solution {
+/* public class Solution {
     public bool IsCovered(int[][] ranges, int left, int right) {
         var set = new HashSet<int>();
 
@@ -18,5 +18,29 @@ public class Solution {
         }
 
         return counter == right - left + 1;
+    }
+} */
+
+
+public class Solution
+{
+    public bool IsCovered(int[][] ranges, int left, int right)
+    {
+        var set = new HashSet<int>();
+
+        foreach (var range in ranges)
+        {
+            for (var i = range[0]; i <= range[1]; i++)
+            {
+                set.Add(i);
+            }
+        }
+
+        for (int i = left; i <= right; i++)
+        {
+            if (!set.Contains(i)) return false;
+        }
+
+        return true;
     }
 }
